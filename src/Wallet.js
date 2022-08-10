@@ -96,7 +96,7 @@ const Wallet = () => {
 		let tempSigner = tempProvider.getSigner();
 		setSigner(tempSigner);
 
-		let tempContract = new ethers.Contract(contractAddress, simple_token_abi, tempSigner);
+		let tempContract = new ethers.Contract(contractAddress, swt6_abi, tempSigner);
 		setContract(tempContract);	
 	}
 
