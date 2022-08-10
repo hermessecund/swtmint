@@ -1,13 +1,13 @@
 import {React, useState, useEffect} from 'react'
 import {ethers} from 'ethers'
 import styles from './Wallet.module.css'
-import simple_token_abi from './Contracts/simple_token_abi.json'
+import swt6 from './Contracts/swt6_abi.json'
 import Interactions from './Interactions';
 
 const Wallet = () => {
 
 	// deploy simple token contract and paste deployed contract address here. This value is local ganache chain
-	let contractAddress = '0x0210811B2d5A7293a00C12ee77Ae343FF845602C';
+	let contractAddress = '0xBA7B0E9223a5c8803c0F186662aD8E0A2a5C152b';
 
 	const [errorMessage, setErrorMessage] = useState(null);
 	const [defaultAccount, setDefaultAccount] = useState(null);
@@ -113,7 +113,7 @@ const Wallet = () => {
 	
 	return (
 	<div>
-			<h2> {tokenName + " ERC-20 Wallet"} </h2>
+			<h2> {tokenName + " SWT6 Wallet"} </h2>
 			<button className={styles.button6} onClick={connectWalletHandler}>{connButtonText}</button>
 
 			<div className={styles.walletCard}>
