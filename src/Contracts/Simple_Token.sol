@@ -1,6 +1,3 @@
-
-// File: contracts/binutecoin.sol
-
 pragma solidity ^0.8.2;
 
 contract SWT6 {
