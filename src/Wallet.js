@@ -1,7 +1,7 @@
 import {React, useState, useEffect} from 'react'
 import {ethers} from 'ethers'
 import styles from './Wallet.module.css'
-import swt6 from './Contracts/swt6_abi.json'
+import swt6 from './Contracts/swt_abi.json'
 import Interactions from './Interactions';
 
 const Wallet = () => {
@@ -96,7 +96,7 @@ const Wallet = () => {
 		let tempSigner = tempProvider.getSigner();
 		setSigner(tempSigner);
 
-		let tempContract = new ethers.Contract(contractAddress, swt6_abi, tempSigner);
+		let tempContract = new ethers.Contract(contractAddress, swt_abi, tempSigner);
 		setContract(tempContract);
 	}
 
