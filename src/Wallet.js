@@ -97,7 +97,7 @@ const Wallet = () => {
 		setSigner(tempSigner);
 
 		let tempContract = new ethers.Contract(contractAddress, swt6_abi, tempSigner);
-		setContract(tempContract);	
+		setContract(tempContract);
 	}
 
 	useEffect(() => {
